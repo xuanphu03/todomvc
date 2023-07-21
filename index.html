@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TODO LIST</title>
+        <meta charset="utf-8">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .checked {
+            border: 1px solid #ead7d7;
+            }
+        </style>
+    </head>
+
+    <body class="bg-[#f5f5f5] py-0 px-[10%]">
+        <div id="title" class="text-center text-[100px] text-[#ead7d7]">todos</div>
+        <input id="input" class="outline-none items-center py-[16px] px-[60px] w-full shadow-xl text-[24px]" type="text"
+            placeholder="What need to be done?">
+        <ul id="list" class="text-gray-600 text-[24px] bg-white"></ul>
+        <div class="bg-white w-full px-[20px] py-4 grid grid-cols-[1fr_2fr_1fr] shadow-xl">
+            <span id="count"></span>
+            <ul id="filter" class="flex justify-center">
+            <li class="px-[20px]">
+                <a class="checked p-2" href="#/">All</a>
+            </li>
+            <li class="px-[20px]">
+                <a href="#/active" class="p-2">Active</a>
+            </li>
+            <li class="px-[20px]">
+                <a href="#/completed" class="p-2">Completed</a>
+            </li>
+            </ul>
+        </div>
+        <footer class="mt-[60px] text-[12px] text-center text-[#9c9c9c]">
+            <p>Created by <a class="underline" href="https://github.com/tranthaison1231/">Son Tran</a></p>
+            <p>Part of <a class="underline" href="https://todomvc.com/">TodoMVC</a></p>
+        </footer>
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>
